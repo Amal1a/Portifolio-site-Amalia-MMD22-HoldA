@@ -1,0 +1,254 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  float: left;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-links li {
+  justify-content: space-between;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  max-width: 100%;
+}
+
+.icons-footer {
+  position: absolute;
+  margin-bottom: 50px;
+  right: 50px;
+}
+
+.btn-li,
+.btn-insta,
+.btn-vsco {
+  width: 50px;
+}
+
+.forside-info {
+  text-align: center;
+}
+
+.knap-hjem {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knap-hjem li {
+  margin: 0 10px;
+}
+
+#tem2 {
+  background-image: url(../img/bg_tema2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#tem3 {
+  background-image: url(../img/bg_tema3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#tem4 {
+  background-image: url(../img/bg_tema4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#tem5 {
+  background-image: url(../img/bg_tema5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#tem6 {
+  background-image: url(../img/bg_tema6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.center-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    max-width: 1200px;
+    justify-self: center;
+  }
+
+  /* -------------- til tema siderne / sub pages til OPGAVER ---------- */
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-self: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* ---------------- nav bar + burger menu ------------- */
+.navbar .burger-menu {
+  display: none;
+  position: absolute;
+  width: 35px;
+  top: 50px;
+  right: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .bg_mobile {
+    background-image: url(../img/bg_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .nav-links {
+    /* display: none; */
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(146, 189, 202, 0.252);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.8s ease-in;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px;
+    font-size: 2em;
+  }
+
+  .navbar .burger-menu {
+    display: block;
+  }
+
+  /* ------------------------------------------- */
+
+  /* ---------------- footer ------------------- */
+  .icons-footer {
+    position: absolute;
+    margin-bottom: 50px;
+    right: 50px;
+  }
+  .btn-li,
+  .btn-insta,
+  .btn-vsco {
+    width: 50px;
+  }
+  /* -------------- til tema siderne / sub pages til OPGAVER ---------- */
+  .grid_2-1 {
+    display: grid;
+    margin: 0;
+  }
+  .grid_1-2 {
+    display: grid;
+    margin: 0;
+  }
+
+  #tem2 {
+    background-image: url(../img/bg_mob_tema2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #tem3 {
+    background-image: url(../img/bg_mob_tema3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #tem4 {
+    background-image: url(../img/bg_mob_tema4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #tem5 {
+    background-image: url(../img/bg_mob_tema5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #tem6 {
+    background-image: url(../img/bg_mob_tema6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .center-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tema-two,
+  #tema-five,
+  #tema-five2 {
+    list-style-type: none;
+    /* position: absolute; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}

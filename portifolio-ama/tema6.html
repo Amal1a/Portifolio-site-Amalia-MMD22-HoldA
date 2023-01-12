@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="icons/favicon_io_amalia_portifolio/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <title>Tema 6 side</title>
+  </head>
+  <body id="tem6">
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Amalia Svejgaard</a>
+        <div class="nav-links">
+          <ul>
+            <li><a class="active" href="index.html">FORSIDE</a></li>
+            <li><a href="opgaver.html">OPGAVER</a></li>
+            <li><a href="about.html">OM MIG</a></li>
+          </ul>
+        </div>
+        <img
+          class="burger-menu"
+          src="./icons/burger_btn.png"
+          alt="burger menu"
+        />
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-opg">
+        <h1 class="tem-h1">TEMA 6</h1>
+        <div class="container-opg2"></div>
+        <section class="grid_2-1">
+          <div class="col">
+            <h2 class="">Portifolio</h2>
+            <hr class="opg" />
+            <p class="opg-txt">
+              Til min portfolio eksamen, prøvede jeg at finde et design og
+              farvepalette, som tiltalte lidt mine blandede kreative interesser
+              og kompetencer. Med de erfaringer, jeg har fået med mig ift. HTML,
+              CSS, XD, Ai, og desk-research (ud over de givne eksempler fra
+              tidligere elever) - begav jeg mig ud i at kode, med målsætning for
+              at bruge midler, programer og opsætning vi har lært, og selv lære
+              at lave en burger menu. Vi har ikke konkret fået det opvist, eller
+              forklaret i undervisning, hvordan man stiller den op, dog lagt op
+              2 gange på fronter: Den ene, som en øvelse, og den første til at
+              lægge ind i sit emnesite.
+            </p>
+          </div>
+          <div class="col">
+            <img src="./img/pic_port1.png" alt="pic opgave" />
+          </div>
+        </section>
+        <ul class="knap-hjem">
+          <li>
+            <a
+              class="btn"
+              href="./data/portifoliosite_amalia.pdf"
+              target="_blank"
+              >XD</a
+            >
+          </li>
+        </ul>
+        <section class="grid_1-2">
+          <div class="col_order">
+            <img src="./img/pic_port2.png" alt="pic opgave" />
+          </div>
+          <div class="col">
+            <h2>Stil</h2>
+            <hr class="opg2" />
+            <p class="opg-txt">
+              Jeg tager udgangspunkt i stile som modernisme, med et modernistisk
+              typografisk udtryk og 3D elementer i baggrundsbilledet, da jeg er
+              blevet inspireret af “3D immersive” hjemmesider på det sidste. Der
+              bliver gjort lidt brug af konventioner ift. “Opgave” siden, med
+              oversigt til temaer, og mine brud af linjer ift. typografi og
+              brutalisme. Jeg lænede mig efter, at forsøge om at være
+              brugervenlig, samtidig med, tradionelle og ikke så tradionelle
+              layout og konventioner. Min desktop research var ikke lige så bred
+              som forrige temaer, men de inspirationer, som jeg har fået fra
+              andre sites er bl.a.:<a
+                href="https://www.itssharl.ee/"
+                target="_blank"
+                style="display: inline"
+                >"Charlie Byuerre/"Sharlee""</a
+              >
+              <a
+                href="https://www.charlietango.dk/"
+                target="_blank"
+                style="display: inline"
+                >"Charlie Tango"</a
+              >
+              og
+              <a
+                href="https://www.Teamway.io"
+                target="_blank"
+                style="display: inline"
+                >"Teamway"</a
+              >.
+            </p>
+            <p class="opg-txt">
+              Jeg fik udarbejdet wireframes, og satte det meste på efter mine
+              mockups i XD til website. Jeg har bl.a. selv lavet ikonerne på
+              selve hjemmesiden vha.a både XD og Illustrator. I illustrator har
+              jeg også lært at gøre brug af et nyere “tool” inden under
+              “Effects” vinduet => “3D inflate”. Den formår at holde de
+              originale flade former på selve dokumentet, men med et live view
+              af 3D rendered objekter. Jeg fik inspiration til at matche “Tema”
+              overskrifterne med highlighter tudser fra mit skrivebord, da det
+              virkede tættere på en mere moderne typografi palette (ud over mine
+              valg af “br” tags for at lave streger.
+            </p>
+          </div>
+        </section>
+        <section class="grid_2-1">
+          <div class="col">
+            <h2>Konflikter</h2>
+            <hr class="opg" />
+            <p class="opg-txt">
+              Jeg sad lidt fast her til sidst, hvor jeg til at starte med ikke
+              kunne få en burger menu til at virke - ud fra de 2 (burgermenus
+              filer og øvelese) om er linket til HOLD A via. fronter (under Tema
+              2: Emnesite og Tema 5). Jeg gjorde mine overvejelser, og jeg fandt
+              frem til denne nav.js, hvilket jeg har benyttet mig til, at få min
+              “burger-menu” til at virke samtidig med at den skulle være
+              responsiv.
+            </p>
+            <p class="opg-txt">
+              Jeg havde generelle problemer med min burger menu ift. at lege med
+              const VS. var VS. Let i javascript, og få den til at virke når man
+              gjorde den responsivt... Dog under sammensætningen af min burger
+              menu blev mine link i navigationsbaren sat i en column, selvom jeg
+              har prøvet at style den med grid, flexbox og text-style i CSS for
+              at prøve at ændre det tilbage, men til ingen nytte, før deadline….
+              Og en mindre detalje.. der var et mellemrum, som ikke var fjernet,
+              hvilket var nok også skyld, i at den ikke virkede, før jeg
+              opdagede det….Men det lykkedes i sidste ende med et responsivt
+              layout med en burger menu og en navbar som breakede dens placering
+              undervejs.
+            </p>
+            <p class="opg-txt">
+              Tiden løb fra mig, med dette portfolio site, og jeg burde ikke
+              havde dispenseret for meget af min tid op til afleveringsfristen,
+              dog endte jeg med at hjælpe Ewin, ved at få hendes site, natten op
+              til sitet skulle afleveres via. mit domæne og hvordan man kunne få
+              det sat op til github, da hun ikke kunne få filezilla tid at
+              virke. Jeg løb dernæst ind i at bruge lidt for lang tid på det med
+              hende, og jeg blev meget tidspresset derefter. Jeg nåede ikke i
+              mål med at få sitet op til github før kl. slog 10. Men jeg
+              forsøgte at sende link til mit portfolio site, men det var lige på
+              klokkeslaget 10, så det blev forsent. Måden jeg havde brugt den
+              sidste tid på, det var alt i alt ikke den fremgangsmåde man skal
+              følge, før man selv er færdig, først.
+            </p>
+          </div>
+          <div class="col">
+            <img src="./img/pic_port3.png" alt="pic opgave" />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copy-ama">&copy;Amalia Svejgaard 2023</p>
+      <div class="icons-footer">
+        <a href="https://www.linkedin.com/in/amalia-svejgaard" target="_blank">
+          <img
+            class="btn-li"
+            src="./icons/Linked_icon.svg"
+            alt="linkedin ikon-knap til amalias profil"
+          />
+        </a>
+        <a href="https://www.instagram.com/amaliasvej/" target="_blank">
+          <img
+            class="btn-insta"
+            src="./icons/insta_icon.svg"
+            alt="instagram ikon-knap til amalias profil"
+          />
+        </a>
+        <a href="https://vsco.co/amaliasvej/journal/p/1" target="_blank">
+          <img
+            class="btn-vsco"
+            src="./icons/vsco_icon.svg"
+            alt="vsco ikon-knap til amalias profil"
+          />
+        </a>
+      </div>
+      <a href="./opgaver.html">TILBAGE</a>
+    </footer>
+    <script src="./javas/nav.js"></script>
+  </body>
+</html>
